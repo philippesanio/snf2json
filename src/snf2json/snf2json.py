@@ -117,15 +117,15 @@ class SNF2JSON(object):
         self.write_breakpoints_to_file(breakpoints=breakpoint_data, output_file=output_file)
 
 
-if __name__ == "__main__":
+def main():
     # Write help message
     help = """
-    SNF2JSON: Convert Sniffles SNFJ file to a JSON file.
-    
-    Generate the SNFJ file:
-    Regular:    snf_to_spectre.py <input_file.snfj> <output_file>
-    Compressed: snf_to_spectre.py <input_file.snfj.gz> <output_file>
-    """
+        SNF2JSON: Convert Sniffles SNFJ file to a JSON file.
+        
+        Usage to convert a snf file to a snfj (JSON) file:
+        Regular:    snf_to_spectre.py <input_file.snfj> <output_file>
+        Compressed: snf_to_spectre.py <input_file.snfj.gz> <output_file>
+        """
     # write --help message
     if "-h" in sys.argv or "--help" in sys.argv:
         print(help)
@@ -140,3 +140,7 @@ if __name__ == "__main__":
     output_file = sys.argv[2]
     sj = SNF2JSON()
     sj.main(input_file, output_file)
+
+
+if __name__ == "__main__":
+    main()
