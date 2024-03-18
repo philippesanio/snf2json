@@ -1,11 +1,12 @@
 # SNF2JSON
 
-This tool is a simple file converter that takes a Sniffles (SNF) file and converts it into a JSON like object.
-The purpose of this converter is to make it easier to work with the Sniffles file format which is consists of multiple 
-pickled objects. If not converted they can only be loaded by importing the Sniffles package.
+This tool is a simple file converter that takes a Sniffles (SNF) file and converts it into a JSON like object (SNFJ).
+The purpose of this converter is to make it easier to work with the Sniffles file format in other tools such as
+[Spectre](https://github.com/fritzsedlazeck/Spectre), which is a long read copy number variation (CNV) caller.
 
-To preserve the original data structure, the pickled objects are converted into a JSON like object structure, which can
-easily be loaded into a Python dictionary.
+Functionality:
+To preserve the original data structure of the SNF file, the pickled objects withing the file are converted into a JSON 
+like object structure, which can easily be loaded into a Python dictionary.
 
 Installation:
 ```bash
