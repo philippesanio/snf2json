@@ -123,8 +123,8 @@ def main():
         SNF2JSON: Convert Sniffles SNFJ file to a JSON file.
         
         Usage to convert a snf file to a snfj (JSON) file:
-        Regular:    snf_to_spectre.py <input_file.snfj> <output_file>
-        Compressed: snf_to_spectre.py <input_file.snfj.gz> <output_file>
+        Regular:    snf_to_spectre.py <input_file.snf> <output_file.snfj>
+        Compressed: snf_to_spectre.py <input_file.snf> <output_file.snfj.gz>
         """
     # write --help message
     if "-h" in sys.argv or "--help" in sys.argv:
