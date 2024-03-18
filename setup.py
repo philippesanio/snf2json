@@ -8,5 +8,7 @@ setup(
     license='MIT',
     author='Philippe Sanio',
     author_email='philippe.sanio@gmail.com',
-    description='A convertion tool for Sniffles objects (SNF) to JSON like objects (SNFJ)'
+    description='A convertion tool for Sniffles objects (SNF) to JSON like objects (SNFJ)',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
 )
